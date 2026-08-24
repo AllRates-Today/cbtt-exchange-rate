@@ -1,0 +1,57 @@
+{
+  "name": "cbtt-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official Central Bank of Trinidad and Tobago (Trinidad and Tobago) daily exchange rates — 9 currencies vs TTD, history since 1991. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "cbtt",
+    "central",
+    "bank",
+    "of",
+    "trinidad",
+    "and",
+    "tobago",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "ttd",
+    "central-bank",
+    "official-rates",
+    "trinidad-and-tobago",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/cbtt/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/cbtt-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/cbtt-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
