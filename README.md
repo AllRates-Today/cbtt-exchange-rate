@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'TTD', { apiKey: 'art_live_...' });
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-08-21',   // Central Bank of Trinidad and Tobago's own publication date
+  rate_date: '2026-09-08',   // Central Bank of Trinidad and Tobago's own publication date
   source: 'USD',
   target: 'TTD',
-  rate: 6.7993,
+  rate: 6.799,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -98,10 +98,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-08-21',
+  rate_date: '2026-09-08',
   rates: [
-    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.7993 },
-    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.7246 },
+    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.799 },
+    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.7039 },
     // … the rest of the published table (9 currencies vs TTD)
   ],
   disclaimer: '…'
@@ -141,7 +141,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbtt-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-08-21' },
+  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-09-08' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -154,11 +154,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TTD',
   from: '2026-01-01',
-  to: '2026-08-21',
+  to: '2026-09-08',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-21', rate: 6.7993, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-09-08', rate: 6.799, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -236,6 +236,14 @@ getRate('USD', 'TTD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1991 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbtt.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbtt/latest.json`
 
 ## 🔗 Links
 
