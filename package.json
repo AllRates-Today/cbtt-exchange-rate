@@ -1,6 +1,6 @@
 {
   "name": "cbtt-exchange-rate",
-  "version": "1.3.1",
+  "version": "1.3.3",
   "description": "Official Central Bank of Trinidad and Tobago (Trinidad and Tobago) daily exchange rates — 9 currencies vs TTD, history since 1991. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "cbtt",
