@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'TTD', { apiKey: 'art_live_...' });
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-09-25',   // Central Bank of Trinidad and Tobago's own publication date
+  rate_date: '2026-10-06',   // Central Bank of Trinidad and Tobago's own publication date
   source: 'USD',
   target: 'TTD',
-  rate: 6.7661,
+  rate: 6.7993,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -113,10 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.7661 },
-    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.717 },
+    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.7993 },
+    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.7207 },
     // … the rest of the published table (9 currencies vs TTD)
   ],
   disclaimer: '…'
@@ -156,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbtt-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -169,11 +169,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TTD',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 6.7661, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 6.7993, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
