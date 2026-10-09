@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/cbtt-exchange-rate.svg)](https://github.com/AllRates-Today/cbtt-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/cbtt-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/TTD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbtt%3Fsource%3DUSD%26target%3DTTD&query=%24.rate&label=USD%2FTTD%20published%20by%20Central%20Bank%20of%20Trinidad%20and%20Tobago&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbtt/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbtt%3Fsource%3DUSD%26target%3DTTD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbtt/)
 
 **Official Central Bank of Trinidad and Tobago (Trinidad and Tobago) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Trinidad and Tobago itself prints, every business day.**
 
@@ -32,6 +34,38 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Trinidad and Tobago table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Central Bank of Trinidad and Tobago — 19 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| BBD | TTD | buy | 2.85 |
+| BBD | TTD | sell | 3.6491 |
+| CAD | TTD | buy | 4.7917 |
+| CAD | TTD | sell | 5.0822 |
+| CHF | TTD | buy | 8.1224 |
+| EUR | TTD | buy | 7.9293 |
+| EUR | TTD | sell | 8.8622 |
+| GBP | TTD | buy | 8.9261 |
+| GBP | TTD | sell | 9.6315 |
+| GYD | TTD | buy | 0.0316 |
+| GYD | TTD | sell | 0.0328 |
+| JMD | TTD | buy | 0.0413 |
+| JMD | TTD | sell | 0.0428 |
+| JPY | TTD | buy | 0.0427 |
+| JPY | TTD | sell | 0.0463 |
+| USD | TTD | buy | 6.7511 |
+| USD | TTD | sell | 6.799 |
+| XCD | TTD | buy | 2.4277 |
+| XCD | TTD | sell | 2.5775 |
+
+Source: [Official rates published by CBTT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbtt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
