@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Central Bank of Trinidad and Tobago — 20 rates. Updated 2026-10-12.
+Published **2026-10-13** by Central Bank of Trinidad and Tobago — 20 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| BBD | TTD | buy | 3.1783 |
-| BBD | TTD | sell | 3.6688 |
-| CAD | TTD | buy | 4.7483 |
-| CAD | TTD | sell | 5.2946 |
-| CHF | TTD | buy | 8.1351 |
-| CHF | TTD | sell | 8.7947 |
-| EUR | TTD | buy | 8.9009 |
-| EUR | TTD | sell | 8.08 |
-| GBP | TTD | buy | 8.9436 |
-| GBP | TTD | sell | 9.4619 |
-| GYD | TTD | buy | 0.0316 |
+| BBD | TTD | buy | 3.1823 |
+| BBD | TTD | sell | 3.6806 |
+| CAD | TTD | buy | 4.7375 |
+| CAD | TTD | sell | 5.092 |
+| CHF | TTD | buy | 8.1195 |
+| CHF | TTD | sell | 8.97 |
+| EUR | TTD | buy | 8.2016 |
+| EUR | TTD | sell | 8.0743 |
+| GBP | TTD | buy | 8.9519 |
+| GBP | TTD | sell | 9.6688 |
+| GYD | TTD | buy | 0.0317 |
 | GYD | TTD | sell | 0.0328 |
-| JMD | TTD | buy | 0.0412 |
+| JMD | TTD | buy | 0.0414 |
 | JMD | TTD | sell | 0.0428 |
-| JPY | TTD | buy | 0.0425 |
-| JPY | TTD | sell | 0.0462 |
-| USD | TTD | buy | 6.752 |
-| USD | TTD | sell | 6.7992 |
-| XCD | TTD | buy | 2.4084 |
-| XCD | TTD | sell | 2.6052 |
+| JPY | TTD | buy | 0.0428 |
+| JPY | TTD | sell | 0.0453 |
+| USD | TTD | buy | 6.772 |
+| USD | TTD | sell | 6.7989 |
+| XCD | TTD | buy | 2.4126 |
+| XCD | TTD | sell | 2.5871 |
 
 Source: [Official rates published by CBTT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbtt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
