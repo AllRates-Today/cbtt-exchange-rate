@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Central Bank of Trinidad and Tobago — 20 rates. Updated 2026-10-13.
+Published **2026-10-13** by Central Bank of Trinidad and Tobago — 20 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -122,10 +122,10 @@ const pair = await getRate('USD', 'TTD', { apiKey: 'art_live_...' });
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-10-09',   // Central Bank of Trinidad and Tobago's own publication date
+  rate_date: '2026-10-13',   // Central Bank of Trinidad and Tobago's own publication date
   source: 'USD',
   target: 'TTD',
-  rate: 6.781,
+  rate: 6.7989,
   rate_type: 'sell',
   derived: false,
   method: 'published',
@@ -150,10 +150,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbtt',
   name: 'Central Bank of Trinidad and Tobago',
-  rate_date: '2026-10-09',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.781 },
-    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.7679 },
+    { "base": "USD", "quote": "TTD", "type": "sell", "value": 6.7989 },
+    { "base": "USD", "quote": "TTD", "type": "buy", "value": 6.772 },
     // … the rest of the published table (9 currencies vs TTD)
   ],
   disclaimer: '…'
@@ -193,7 +193,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'cbtt-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-10-09' },
+  { source: 'USD', target: 'TTD', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -206,11 +206,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'TTD',
   from: '2026-01-01',
-  to: '2026-10-09',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-09', rate: 6.781, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 6.7989, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -329,9 +329,9 @@ getRate('USD', 'TTD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbtt.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/cbtt.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbtt/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/cbtt/latest.json`
 
 ## 🔗 Links
 
