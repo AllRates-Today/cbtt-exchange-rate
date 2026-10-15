@@ -42,29 +42,27 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by Central Bank of Trinidad and Tobago — 19 rates. Updated 2026-10-14.
+Published **2026-10-15** by Central Bank of Trinidad and Tobago — 17 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| BBD | TTD | buy | 3.1823 |
-| BBD | TTD | sell | 3.6138 |
-| CAD | TTD | buy | 4.7476 |
-| CAD | TTD | sell | 5.1149 |
-| CHF | TTD | sell | 8.7809 |
-| EUR | TTD | buy | 8.8573 |
-| EUR | TTD | sell | 9.0926 |
-| GBP | TTD | buy | 8.9565 |
-| GBP | TTD | sell | 9.7026 |
-| GYD | TTD | buy | 0.0316 |
+| BBD | TTD | sell | 3.7505 |
+| CAD | TTD | buy | 4.7228 |
+| CAD | TTD | sell | 5.1752 |
+| EUR | TTD | buy | 7.5175 |
+| EUR | TTD | sell | 8.7615 |
+| GBP | TTD | buy | 8.9253 |
+| GBP | TTD | sell | 9.6565 |
+| GYD | TTD | buy | 0.0315 |
 | GYD | TTD | sell | 0.0326 |
-| JMD | TTD | buy | 0.0412 |
+| JMD | TTD | buy | 0.0411 |
 | JMD | TTD | sell | 0.0425 |
 | JPY | TTD | buy | 0.0425 |
-| JPY | TTD | sell | 0.045 |
-| USD | TTD | buy | 6.7475 |
+| JPY | TTD | sell | 0.0478 |
+| USD | TTD | buy | 6.7269 |
 | USD | TTD | sell | 6.7571 |
-| XCD | TTD | buy | 2.3843 |
-| XCD | TTD | sell | 2.6182 |
+| XCD | TTD | buy | 2.3706 |
+| XCD | TTD | sell | 2.5925 |
 
 Source: [Official rates published by CBTT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbtt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
