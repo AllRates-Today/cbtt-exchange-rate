@@ -43,28 +43,28 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-16 by Central Bank of Trinidad and Tobago — 18 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-19 by Central Bank of Trinidad and Tobago — 18 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| BBD | TTD | buy | 3.3504 |
-| BBD | TTD | sell | 3.7021 |
-| CAD | TTD | buy | 4.7467 |
-| CAD | TTD | sell | 5.3835 |
-| EUR | TTD | buy | 8.3041 |
-| EUR | TTD | sell | 8.9119 |
-| GBP | TTD | buy | 8.9612 |
-| GBP | TTD | sell | 9.616 |
-| GYD | TTD | buy | 0.0315 |
-| GYD | TTD | sell | 0.0326 |
+| BBD | TTD | buy | 3.1614 |
+| BBD | TTD | sell | 3.596 |
+| CAD | TTD | buy | 4.7662 |
+| CAD | TTD | sell | 5.0954 |
+| EUR | TTD | buy | 7.6045 |
+| EUR | TTD | sell | 8.3768 |
+| GBP | TTD | buy | 8.9427 |
+| GBP | TTD | sell | 9.7754 |
+| GYD | TTD | buy | 0.0312 |
+| GYD | TTD | sell | 0.0324 |
 | JMD | TTD | buy | 0.0412 |
 | JMD | TTD | sell | 0.0427 |
-| JPY | TTD | buy | 0.0425 |
-| JPY | TTD | sell | 0.0427 |
-| USD | TTD | buy | 6.7312 |
-| USD | TTD | sell | 6.7648 |
-| XCD | TTD | buy | 2.4068 |
-| XCD | TTD | sell | 2.5886 |
+| JPY | TTD | buy | 0.0424 |
+| JPY | TTD | sell | 0.0461 |
+| USD | TTD | buy | 6.7279 |
+| USD | TTD | sell | 6.7773 |
+| XCD | TTD | buy | 2.4178 |
+| XCD | TTD | sell | 2.6638 |
 
 </details>
 
