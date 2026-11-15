@@ -31,33 +31,7 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-<details>
-<summary>Table as text: published 2026-11-13 by Central Bank of Trinidad and Tobago — 18 rates. Updated 2026-11-13.</summary>
-
-| Base | Quote | Type | Rate |
-| --- | --- | --- | ---: |
-| BBD | TTD | buy | 3.1589 |
-| BBD | TTD | sell | 3.6016 |
-| CAD | TTD | buy | 4.7363 |
-| CAD | TTD | sell | 5.1031 |
-| EUR | TTD | buy | 7.4495 |
-| EUR | TTD | sell | 8.1543 |
-| GBP | TTD | buy | 8.9133 |
-| GBP | TTD | sell | 9.6533 |
-| GYD | TTD | buy | 0.031 |
-| GYD | TTD | sell | 0.0323 |
-| JMD | TTD | buy | 0.0409 |
-| JMD | TTD | sell | 0.0426 |
-| JPY | TTD | buy | 0.0418 |
-| JPY | TTD | sell | 0.0422 |
-| USD | TTD | buy | 6.6783 |
-| USD | TTD | sell | 6.7539 |
-| XCD | TTD | buy | 2.3527 |
-| XCD | TTD | sell | 2.57 |
-
-</details>
-
-Source: [Official rates published by CBTT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbtt/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+_The table is filled in by the daily workflow._
 <!-- daily-table:end -->
 
 ## 📦 Installation
