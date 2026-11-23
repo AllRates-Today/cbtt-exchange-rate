@@ -32,28 +32,27 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-20 by Central Bank of Trinidad and Tobago — 18 rates. Updated 2026-11-21.</summary>
+<summary>Table as text: published 2026-11-23 by Central Bank of Trinidad and Tobago — 17 rates. Updated 2026-11-23.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| BBD | TTD | buy | 2.6966 |
-| BBD | TTD | sell | 3.6157 |
-| CAD | TTD | buy | 4.7434 |
-| CAD | TTD | sell | 5.1463 |
-| EUR | TTD | buy | 7.6666 |
-| EUR | TTD | sell | 8.691 |
-| GBP | TTD | buy | 8.8497 |
-| GBP | TTD | sell | 9.6788 |
-| GYD | TTD | buy | 0.0311 |
+| BBD | TTD | sell | 3.6371 |
+| CAD | TTD | buy | 4.6862 |
+| CAD | TTD | sell | 5.0571 |
+| EUR | TTD | buy | 7.2389 |
+| EUR | TTD | sell | 8.1871 |
+| GBP | TTD | buy | 8.828 |
+| GBP | TTD | sell | 9.7776 |
+| GYD | TTD | buy | 0.0312 |
 | GYD | TTD | sell | 0.0324 |
-| JMD | TTD | buy | 0.041 |
-| JMD | TTD | sell | 0.0427 |
+| JMD | TTD | buy | 0.0412 |
+| JMD | TTD | sell | 0.0428 |
 | JPY | TTD | buy | 0.0422 |
-| JPY | TTD | sell | 0.0468 |
-| USD | TTD | buy | 6.6981 |
-| USD | TTD | sell | 6.7695 |
-| XCD | TTD | buy | 2.3768 |
-| XCD | TTD | sell | 2.5791 |
+| JPY | TTD | sell | 0.0457 |
+| USD | TTD | buy | 6.7188 |
+| USD | TTD | sell | 6.7675 |
+| XCD | TTD | buy | 2.4189 |
+| XCD | TTD | sell | 2.5861 |
 
 </details>
 
@@ -324,7 +323,7 @@ Need the whole archive rather than an API call? The same official tables are mir
 
 - **Website:** [allratestoday.com](https://allratestoday.com)
 - [Central Bank of Trinidad and Tobago rates page](https://allratestoday.com/central-bank-rates-api/cbtt/) — live table, publication cadence, FAQ
-- [All central bank sources](https://allratestoday.com/central-bank-rates-api/) · [Full list of 130+ central banks and tax authorities](https://allratestoday.com/central-bank-rates-api/institutions/) — one API, the same response shape for every source
+- [All central bank sources](https://allratestoday.com/central-bank-rates-api/) · [Full list of 120+ central banks and 50+ tax authorities](https://allratestoday.com/central-bank-rates-api/institutions/) — one API, the same response shape for every source
 - [Download central bank rates](https://allratestoday.com/download-central-bank-rates/) — every bank's latest table and history as Excel, CSV or JSON
 - [Bank Exchange Rate API](https://allratestoday.com/bank-exchange-rate-api/) — live buy and sell rates from 1,200+ commercial banks in 120+ countries · [npm](https://www.npmjs.com/package/bank-exchange-rates) · [GitHub](https://github.com/AllRates-Today/bank-exchange-rates)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/cbtt-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
